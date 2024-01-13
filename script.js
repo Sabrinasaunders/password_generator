@@ -2,11 +2,11 @@
 var generateBtn = document.querySelector("#generate");
 
 //Write global variables for the password
-var pwdinput = [""]
+var pwdNumber = "1234567890"
 var pwdLowerCase = "abcdefghijklmnopqrstuvwxyz"
 var pwdUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var pwdSpChar = "!@#$%^&*()_=+[]{}/?<>"
-var pwdNumber = "1234567890"
+var pwdinput = [""]
 var pwdRandom = ""
 
 
@@ -36,7 +36,7 @@ return
 } 
 
 // ask if they want uppercase, using confirm or cancel
-var upperCase = confirm("Include upper case letters?");
+var upperCase = confirm("Include upper case?");
 console.log(upperCase);
 // enter what will happen when they confirm
 if (upperCase === true) {
@@ -78,7 +78,7 @@ if (specialCharacters === true) {
 }
 function showPrompts() {
     characterAmount = prompt
-    upperCase = confirm("Include upper case letters?");
+    upperCase = confirm("Include upper case?");
     lowerCase = confirm("Include lower case?");
     specialCharacters = confirm("Include special characters?");
     includeNumbers = confirm("Include numbers?");
